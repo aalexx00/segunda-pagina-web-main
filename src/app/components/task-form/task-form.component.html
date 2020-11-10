@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <form (submit)="addTask(newTitle, newLugar, newDia, newContacto, newDescription)">
+      <div class="form-group">
+        <input type="text" placeholder="Nombre Evento" #newTitle class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Lugar Evento" #newLugar class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Dia Evento" #newDia class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="number" placeholder="Contacto" #newContacto class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea #newDescription cols="30" rows="10" class="form-control" placeholder="Comentarios"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Crear</button>
+    </form>
+  </div>
+</div>
